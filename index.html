@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Campus Event Registration</title>
+    <title>Campus Event Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h2>Register for Event</h2>
+    <h2>Campus Event Registration</h2>
 
-  <input id="name" placeholder="Name" />
-  <input id="email" placeholder="Email" />
-  <input id="event" placeholder="Event Name" />
-  <button onclick="register()">Register</button>
+    <div class="container">
 
-  <h3>Registrations</h3>
-  <ul id="list"></ul>
+        <h3>Register Student</h3>
 
-  <script src="script.js"></script>
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="roll" placeholder="Roll Number">
+        <input type="text" id="event" placeholder="Event Name">
+        <button onclick="registerStudent()">Register</button>
+
+        <h3>Registered Students</h3>
+        <ul id="registrationList"></ul>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
